@@ -1,1 +1,0 @@
-QuickMeet upload permission check
