@@ -133,7 +133,7 @@ struct MainTabView: View {
                 .tabItem { Label("发现", systemImage: "safari") }
                 .tag(AppTab.discover)
 
-            NavigationStack { MessagesView() }
+            NavigationStack(path: $appState.messagesPath) { MessagesView() }
                 .tabItem { Label("消息", systemImage: "message") }
                 .badge(store.unreadCount > 0 ? store.unreadCount : 0)
                 .tag(AppTab.messages)
@@ -143,5 +143,11 @@ struct MainTabView: View {
                 .tag(AppTab.profile)
         }
         .tint(QMColor.primary)
+        .onChange(of: appState.activeChatThreadID) { _, threadID in
+            guard let threadID else { return }
+            appState.selectedTab = .messages
+            appState.messagesPath = [threadID]
+            appState.activeChatThreadID = nil
+        }
     }
 }

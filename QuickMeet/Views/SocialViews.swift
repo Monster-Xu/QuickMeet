@@ -178,7 +178,7 @@ struct ProfileView: View {
 
 struct EditProfileView: View {
     @EnvironmentObject private var store: AppStore
-    @Environment(\\.dismiss) private var dismiss
+    @Environment(\.dismiss) private var dismiss
     @State private var displayName = ""
     @State private var ageText = ""
     @State private var city = ""
