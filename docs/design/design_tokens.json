@@ -1,0 +1,47 @@
+{
+  "color": {
+    "brand": {
+      "primary": "#7C5CFF",
+      "secondary": "#FF5FA2"
+    },
+    "neutral": {
+      "background": "#F7F8FC",
+      "surface": "#FFFFFF",
+      "border": "#E6EAF2",
+      "textPrimary": "#101828",
+      "textSecondary": "#667085"
+    },
+    "semantic": {
+      "success": "#22C55E",
+      "danger": "#FF4D67"
+    }
+  },
+  "typography": {
+    "display": { "size": 32, "weight": "bold" },
+    "title": { "size": 28, "weight": "bold" },
+    "heading": { "size": 24, "weight": "semibold" },
+    "subheading": { "size": 20, "weight": "semibold" },
+    "body": { "size": 16, "weight": "regular" },
+    "caption": { "size": 14, "weight": "regular" },
+    "tag": { "size": 13, "weight": "medium" },
+    "button": { "size": 16, "weight": "semibold" }
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 20,
+    "xxl": 24,
+    "pagePadding": 20,
+    "cardPadding": 16,
+    "sectionGap": 24
+  },
+  "radius": {
+    "sm": 12,
+    "md": 16,
+    "lg": 20,
+    "xl": 24,
+    "full": 999
+  }
+}
